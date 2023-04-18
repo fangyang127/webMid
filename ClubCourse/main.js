@@ -41,7 +41,7 @@ $(function(){
             $("#courseTable").append(
                 "<tr>"+
                 "<td>"+(x+1)+"</td>"+
-                "<td>"+(new Date(startDate.getTime()+x*millisecsPerDay)).toLocaleDateString("zh-TW", {month: 'short', day: 'numeric'})+"</td>"+
+                "<td>"+(new Date(startDate.getTime()+x*7*millisecsPerDay)).toLocaleDateString("zh-TW", {month: 'short', day: 'numeric'})+"</td>"+
                 "<td>"+topic[x]+"</td>"+
                 "</tr>");
         }
